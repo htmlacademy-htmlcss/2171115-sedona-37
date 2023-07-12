@@ -59,6 +59,7 @@ body{
 
 .navigation-list{
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     min-width: 339px;
@@ -75,6 +76,7 @@ body{
 }
 
 .navigation-link {
+    display: block;
     font-family: "PT Sans", sans-serif;
     font-size: 20px;
     line-height: 24px;
@@ -98,6 +100,18 @@ body{
     padding: 22px 12px;
     justify-content: center;
     align-items: center;
+}
+
+.button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #756157;
+    border-radius: 4px;
+    padding: 8px 34px;
+    margin-left: 20px;
 }
 
 .nav-btn-text{
@@ -181,7 +195,10 @@ line-height: 21px;
     align-items: center;
     justify-content: center;
     width: 400px;
-    /* padding: 103px 85px; */
+    min-height: 385px;
+    padding-left: 85px;
+    padding-right: 85px;
+    box-sizing: border-box;
 
 }
 
@@ -369,7 +386,13 @@ line-height: 21px;
  }
 .subscription-title{
     text-transform: uppercase;
+    margin: 0 0 20px;
 }
+
+.subscription-subtitle{
+    margin: 0 0 54px;
+}
+
 
 .subscription {
     color: #FFFFFF;
@@ -413,10 +436,10 @@ line-height: 21px;
 
 .page-footer-item{
     display: flex;
-padding: 1px 10px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    padding: 1px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-header{
