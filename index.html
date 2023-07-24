@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.png">
   </head>
   <body>
     <div class="page-container">
@@ -49,7 +50,7 @@
         <img src="images/welcome.svg" width="458" height="352" alt="Каньон">
       </div>
       <div class="divider">
-        <img src="images/divider.svg" width="1200px" height="57px" alt="Дивидер">
+        <img src="images/divider.png" width="1200" height="57" alt="Дивидер">
       </div>
       <section class="description">
         <div class="description-header">
@@ -183,27 +184,31 @@
                   <span class="modal-label-span">Дата заезда:</span>
                   <input class="modal-date " type="text" placeholder="Укажите дату" name="arrive-date" value="27 апреля 2020">
                   <svg class="input-calendar" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none"><g fill="#000"><path d="M5.8 10c.3 0 .5-.2.5-.5S6 9 5.8 9c-.3 0-.5.2-.5.5s.2.5.5.5Z"/><path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/><path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.3 10c.3 0 .4-.2.4-.5s-.1-.5-.4-.5c-.4 0-.6.2-.6.5s.3.5.6.5ZM5.8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.3-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.3 11c-.4 0-.6.2-.6.5s.3.5.6.5.4-.2.4-.5-.1-.5-.4-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g></svg>
-                  <span class="date-state">Мы не можем отправить вас в прошлое</span>
+                  <span class="date-state">Мы не можем отправить вас в прошлое.</span>
                 </label>
+
                 <label class="modal-date-label">
                   <span class="modal-label-span">Дата выезда:</span>
                   <input class="modal-date " type="text" placeholder="Укажите дату" value="1 сентября 2023">
                   <svg class="input-calendar" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none"><g fill="#000"><path d="M5.8 10c.3 0 .5-.2.5-.5S6 9 5.8 9c-.3 0-.5.2-.5.5s.2.5.5.5Z"/><path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/><path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.3 10c.3 0 .4-.2.4-.5s-.1-.5-.4-.5c-.4 0-.6.2-.6.5s.3.5.6.5ZM5.8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.3-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.3 11c-.4 0-.6.2-.6.5s.3.5.6.5.4-.2.4-.5-.1-.5-.4-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g></svg>
                   <span class="last-day">На эти даты есть свободные номера. Пока есть.</span>
                 </label>
-                <label for="adult-number" class="modal-adult-label-text">
+
+                <label class="modal-adult-label-text">
                   <span class="modal-label-span">Взрослые</span>
+                </label>
                   <div class="modal-box">
-                    <button class="math-mark modal-minus" type="button">
+                    <button class="modal-minus">
                       <svg class="modal-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="2" fill="none"><path fill="#000" d="M.4 0v2h14V0H.4Z"/></svg>
                     </button>
-                    <input class="people-number-field" value="2" min="0" max="10" type="number">
-                    <button class="math-mark modal-plus" type="button">
+                    <input name="people" class="people-number-field" value="2" min="0" max="10" type="number">
+                    <button class="modal-plus">
                       <svg class="modal-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"><path fill="#000" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
                     </button>
                   </div>
-                </label>
-                <label for="adult-number" class="modal-kids-label-text">
+
+
+                <label class="modal-kids-label-text">
                   <span class="modal-label-span">Дети:</span>
                   <span class="info">
                     <button class="info-btn" type="button" aria-labelledby="info-label-kids">
@@ -214,16 +219,18 @@
                       Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.
                     </span>
                   </span>
+                </label>
+
                   <div class="modal-box">
-                    <button class="math-mark modal-minus" type="button">
+                    <button class="modal-minus">
                       <svg class="modal-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="2" fill="none"><path fill="#000" d="M.4 0v2h14V0H.4Z"/></svg>
                     </button>
-                    <input class="people-number-field" value="2" min="0" max="10" type="number">
-                    <button class="math-mark modal-plus" type="button">
+                    <input name="people" class="people-number-field" value="2" min="0" max="10" type="number">
+                    <button class="modal-plus">
                       <svg class="modal-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"><path fill="#000" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
                     </button>
                   </div>
-                </label>
+
                 <button class="modal-button" type="button">Найти</button>
               </form>
             </section>
