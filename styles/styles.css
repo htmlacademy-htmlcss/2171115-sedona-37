@@ -198,7 +198,7 @@ body{
 
 .nav-btn-text{
     font-size: 16px;
-    font-family: PT Sans;
+    font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
     line-height: 20px;
@@ -271,7 +271,7 @@ body{
 
 .description-subtitle{
     font-size: 18px;
-    font-family: PT Sans;
+    font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
@@ -461,7 +461,7 @@ body{
 
 .action-title{
     font-size: 30px;
-    font-family: PT Sans;
+    font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
     line-height: 36px;
@@ -557,7 +557,7 @@ body{
 
 .subscription-input{
     font-size: 18px;
-    font-family: PT sans, sans-serif;
+    font-family: "PT sans", sans-serif;
     border: none;
     padding: 12px 22px;
     flex-grow: 1;
@@ -858,6 +858,7 @@ body{
 }
 
 .range-bar{
+    width: 226px;
     position: absolute;
     height: 4px;
     background-color: #fff;
@@ -966,7 +967,7 @@ body{
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 700;
-    font-family: PT Sans;
+    font-family: "PT Sans";
 }
 
 
@@ -1041,7 +1042,7 @@ body{
     color: #333333;
     background-color: #fff;
     padding: 12px 99px 12px 20px;
-    font-family: PT Sans;
+    font-family: "PT Sans";
     appearance: none;
     background-image: url(../images/icons/select-arrow.svg);
     background-repeat: no-repeat;
@@ -1428,7 +1429,7 @@ body{
 
 .modal-date{
     color: #000;
-    font-family: PT Sans;
+    font-family: "PT Sans";
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -1490,21 +1491,22 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    grid-column: 1 / span 2;
+
 
 }
 
 .people-number-field{
     border: none;
-    width: 34px;
+    width: 35px;
     padding: 15px 35px 15px 35px;
     line-height: 20px;
     background: #F2F2F2;
     color: #000;
-    font-family: PT Sans;
+    font-family: "PT Sans";
     font-size: 18px;
     font-weight: 700;
     border-radius: 4px;
+    margin-left: auto;
 }
 
 .people-number-field::-webkit-inner-spin-button,
@@ -1538,6 +1540,19 @@ body{
     left: 10px;
     position: absolute;
     fill: #756157;
+    cursor: pointer;
+    border: none;
+}
+
+.modal-minus:hover {
+    fill: #000000;
+    opacity: 1;
+}
+
+.modal-minus:focus{
+    border-radius: 4px;
+  outline: 3px solid #82B3D3;
+  fill: #000000;
 }
 
 .modal-icon{
@@ -1551,16 +1566,39 @@ body{
     opacity: 0.3;
 }
 
+.modal-icon:hover {
+    fill: #000000;
+    opacity: 1;
+}
+
+.modal-icon:focus {
+    fill: #000000;
+    opacity: 1;
+}
+
+.modal-icon:active {
+    fill: #000000;
+    opacity: 0.3;
+}
+
 
 .modal-plus{
     height: 20px;
     width: 20px;
     position: absolute;
     right: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.modal-plus:focus{
+    border-radius: 4px;
+  outline: 3px solid #82B3D3;
+  fill: #000000;
 }
 
 .modal-kids-label-text{
-    grid-column: 4 / span 2;
+    grid-column: 4 / span 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1598,14 +1636,24 @@ body{
     width: 256px;
     position: absolute;
     margin-bottom: 6px;
-    right: 6%;
+    right: -68%;
     z-index: 1;
     display: none;
     color: #FFF;
-    font-family: PT Sans;
+    font-family: "PT Sans";
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
+}
+
+.info-text::before{
+    content: "";
+    background-image: url(../images/icons/triangle\ 1.svg);
+    position: absolute;
+    width: 19px;
+    height: 9px;
+    top: -6px;
+    left: 120px;
 }
 
 .modal-button{
